@@ -1,0 +1,809 @@
+2022-12-06 08:59:39,708 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Program Files\Python39\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Program Files\Python39\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [CH2PR16CA0001.namprd16.prod.outlook.com]')
+2022-12-07 08:59:34,038 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Program Files\Python39\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Program Files\Python39\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [CH2PR03CA0003.namprd03.prod.outlook.com]')
+2022-12-08 08:59:46,511 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Program Files\Python39\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Program Files\Python39\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [CH2PR03CA0018.namprd03.prod.outlook.com]')
+2022-12-09 08:59:36,631 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Program Files\Python39\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Program Files\Python39\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [CH0PR04CA0070.namprd04.prod.outlook.com]')
+2022-12-10 08:59:32,683 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Program Files\Python39\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Program Files\Python39\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [CH0PR04CA0023.namprd04.prod.outlook.com]')
+2022-12-11 08:59:40,434 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Program Files\Python39\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Program Files\Python39\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [CH2PR14CA0035.namprd14.prod.outlook.com]')
+2023-02-08 08:59:30,635 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Program Files\Python39\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Program Files\Python39\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [CH0PR03CA0028.namprd03.prod.outlook.com 2023-02-08T13:59:30.616Z 08DB09840BB48B61]')
+2023-02-09 08:59:35,584 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Program Files\Python39\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Program Files\Python39\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, the user credentials were incorrect. [CH0PR04CA0109.namprd04.prod.outlook.com 2023-02-09T13:59:35.594Z 08DB0A5E07519970]')
+2023-02-21 08:59:18,016 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-02-22 08:59:22,825 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-02-23 08:59:16,042 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-02-24 08:59:13,885 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-02-25 08:59:11,994 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-02-26 08:59:17,132 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-02-27 08:59:20,958 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-02-28 08:59:17,150 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-01 08:59:18,251 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-02 08:59:15,691 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-03 08:59:08,328 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-04 08:59:07,622 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-05 08:59:09,066 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-06 08:59:15,542 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-07 08:59:12,984 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-08 08:59:15,561 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-09 08:59:11,385 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-10 08:59:15,886 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-11 08:59:09,560 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-12 08:59:15,574 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-13 08:59:27,030 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-14 08:59:21,698 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-15 08:59:34,048 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-16 08:59:18,743 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-17 08:59:33,872 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-18 08:59:28,772 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-19 08:59:14,728 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-20 08:59:16,882 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
+2023-03-21 08:59:17,084 Exception on /report [GET]
+Traceback (most recent call last):
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\CDL\CDL-OrderCleanup\.\ordercleanup\main\routes.py", line 89, in get_report
+    mail.send(msg)
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "D:\CDL\CDL-OrderCleanup\cdl_ordercleanup\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Program Files\Python39\lib\smtplib.py", line 716, in login
+    raise SMTPNotSupportedError(
+smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
